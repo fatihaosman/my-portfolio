@@ -1,0 +1,98 @@
+.contact {
+  background: #214D2E;
+  /*background: #184D47;  your dark green */
+  padding: 7rem 8%;
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: center;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+}
+
+.contact-tag {
+  color: #A8D5BA;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+
+.contact-left h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.contact-description {
+  max-width: 520px;
+  color: rgba(255,255,255,.8);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 2px solid #A8D5BA;
+  border-radius: 50px;
+  color: #A8D5BA;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s ease;
+}
+
+.contact-btn:hover {
+  background: #A8D5BA;
+  color: #214D2E;
+}
+
+.contact-right h3 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.contact-right a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1.3rem;
+  transition: .3s;
+  font-size: 1.05rem;
+}
+
+.contact-right a svg {
+  font-size: 1.3rem;
+  color: #A8D5BA;
+}
+
+.contact-right a:hover {
+  color: #A8D5BA;
+  transform: translateX(8px);
+}
+
+@media (max-width:768px) {
+
+  .contact {
+    padding: 5rem 7%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-left h2 {
+    font-size: 2.3rem;
+  }
+
+}
