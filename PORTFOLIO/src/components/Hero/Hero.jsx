@@ -1,5 +1,5 @@
 import "./Hero.css";
-import forest from "../../assets/frame 4 (4).png";
+import forest from "../../assets/Me.png";
 // import { FiArrowUpRight } from "react-icons/fi";
 import { IoMdDownload } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
