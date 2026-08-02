@@ -325,12 +325,12 @@ function UniMart() {
 
         <section className="case-section">
 
-            <h2>Experience Walkthrough</h2>
+            <h2>App Walkthrough</h2>
 
             <p className="walkthrough-intro">
-              The following screens highlight the complete user journey, from
-              onboarding and discovering products to purchasing, managing
-              orders, and creating listings as a seller.
+              The following screens showcase the final Vendas experience,
+              highlighting the platform's core functionality for both buyers
+              and sellers.
             </p>
 
             <div className="walkthrough-slider">
@@ -355,7 +355,7 @@ function UniMart() {
 
       {/* CORE FEATURES */}
 
-      <section className="case-section">
+      {/* <section className="case-section">
 
         <h2>Core Features</h2>
 
@@ -393,7 +393,7 @@ function UniMart() {
 
         </div>
 
-      </section>
+      </section> */}
 
       {/* PRODUCT EVOLUTION */}
 
