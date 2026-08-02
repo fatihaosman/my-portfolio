@@ -25,7 +25,7 @@ function Projects() {
         <div className="project-card unimart-card">
           <img src={project1} alt="UniMart" className="project-image" />
 
-          <h3 className="unimart-header">UniMart</h3>
+          <h3 className="unimart-header">Vendas</h3>
 
           <p className="project-description">
             A student marketplace platform for buying and selling products.
@@ -37,10 +37,26 @@ function Projects() {
             <span>PostgreSQL</span>
           </div>
 
-          <Link className="view-case unimart-case" to="/unimart">
+          {/* <Link className="view-case unimart-case" to="/unimart">
             View Case
             <FiArrowUpRight />
-          </Link>
+          </Link> */}
+          <div className="project-actions">
+            <Link className="vendas-view-case unimart-case" to="/unimart">
+              View Case
+              <FiArrowUpRight />
+            </Link>
+
+            <a
+              className="live-link"
+              href="YOUR_VENDAS_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open App
+              <FiArrowUpRight />
+            </a>
+          </div>
         </div>
 
         <div className="project-card eger-card">
@@ -58,10 +74,27 @@ function Projects() {
             <span>REST API</span>
           </div>
 
-          <Link className="view-case eger-case" to="/egerconnect" >
+          {/* <Link className="view-case eger-case" to="/egerconnect" >
             View Case
             <FiArrowUpRight />
-          </Link>
+          </Link> */}
+
+            <div className="project-actions">
+                <Link className="eger-view-case eger-case" to="/egerconnect">
+                  View Case
+                  <FiArrowUpRight />
+                </Link>
+
+                <a
+                  className="live-link"
+                  href="YOUR_EGERCONNECT_LINK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Website
+                  <FiArrowUpRight />
+                </a>
+              </div>
         </div>
 
         <div className="project-card ic-card">
@@ -79,10 +112,27 @@ function Projects() {
             <span>UI Design</span>
           </div>
 
-          <Link className="view-case ic-case"   to="/ic-project">
+          {/* <Link className="view-case ic-case"   to="/ic-project">
             View Case
             <FiArrowUpRight />
-          </Link>
+          </Link> */}
+
+          <div className="project-actions">
+                <Link className="ic-view-case eger-case" to="/egerconnect">
+                  View Case
+                  <FiArrowUpRight />
+                </Link>
+
+                <a
+                  className="live-link"
+                  href="YOUR_EGERCONNECT_LINK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Website
+                  <FiArrowUpRight />
+                </a>
+              </div>
         </div>
 
         
