@@ -355,7 +355,7 @@ function UniMart() {
 
       {/* CORE FEATURES */}
 
-      {/* <section className="case-section">
+      <section className="case-section">
 
         <h2>Core Features</h2>
 
@@ -393,7 +393,7 @@ function UniMart() {
 
         </div>
 
-      </section> */}
+      </section>
 
       {/* PRODUCT EVOLUTION */}
 

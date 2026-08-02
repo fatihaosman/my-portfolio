@@ -3,6 +3,76 @@ import "./Egerconnect.css";
 import coverImage from "../../assets/eger.png";
 // import video from "../../assets/";
 
+
+import homepage from "../../assets/homepage.png";
+import clubs from "../../assets/clubs.png";
+import notices from "../../assets/notices.png";
+import events from "../../assets/events.png";
+import lostFound from "../../assets/lostfound.png";
+import support from "../../assets/support.png";
+import aboutEgerton from "../../assets/about.png";
+// import registration from "../../assets/registration.png";
+
+
+const walkthrough = [
+  {
+    title: "Homepage",
+    image: homepage,
+    description:
+      "Introduces EgerConnect with a clear landing section that explains the platform's purpose. The homepage also highlights recent notices, upcoming events, student clubs, and contact information to help visitors quickly understand what the website offers."
+  },
+
+  {
+    title: "Student Clubs",
+    image: clubs,
+    description:
+      "Showcases the clubs and societies available at Egerton University, allowing students to discover communities that match their interests. Each club includes a dedicated page with detailed information and activities."
+  },
+
+  {
+    title: "Notices",
+    image: notices,
+    description:
+      "Provides a centralized space for official university announcements, ensuring students can easily access faculty notices, academic updates, and important communications in one place."
+  },
+
+  {
+    title: "Events",
+    image: events,
+    description:
+      "Displays upcoming university events in a structured timeline, helping students stay informed about activities, workshops, competitions, and important campus dates."
+  },
+
+  {
+    title: "Lost & Found",
+    image: lostFound,
+    description:
+      "Allows students to browse reported lost and found items, making it easier to reconnect owners with misplaced belongings while reducing reliance on social media posts."
+  },
+
+  {
+    title: "Scholarships & Student Support",
+    image: support,
+    description:
+      "Brings together scholarship opportunities, bursaries, and financial support resources. Students facing financial challenges can also submit support requests through a dedicated assistance form."
+  },
+
+  {
+    title: "About Egerton",
+    image: aboutEgerton,
+    description:
+      "Introduces students to the university's history, campuses, faculties, and culture, providing useful information for new students and anyone interested in learning more about Egerton University."
+  },
+
+  // {
+  //   title: "Student Authentication",
+  //   image: registration,
+  //   description:
+  //     "Provides a simple registration and login process that allows students to securely access personalized features and participate in the EgerConnect platform."
+  // }
+];
+
+
 function EgerConnect() {
   return (
     <main className="case-study">
@@ -165,9 +235,41 @@ function EgerConnect() {
 
       </section>
 
-      {/* FEATURES */}
+           {/* EXPERIENCE WALKTHROUGH */}
 
-      <section className="case-section">
+        <section className="case-section">
+
+            <h2>Website Walkthrough</h2>
+
+            <p className="eger-walkthrough-intro">
+              Explore the main sections of EgerConnect, showcasing how students
+              can discover campus information, access support services, and
+              navigate university resources through a centralized platform.
+            </p>
+
+            <div className="eger-walkthrough-slider">
+                {walkthrough.map((screen,index)=>(
+                <div className="eger-walkthrough-card" key={index}>
+
+                <img src={screen.image} />
+
+                <div className="eger-walkthrough-content">
+
+                <h3>{screen.title}</h3>
+
+                <p>{screen.description}</p>
+
+                </div>
+
+                </div>
+                ))}
+            </div>
+
+       </section> 
+
+      {/* Core FEATURES */}
+
+      {/* <section className="case-section">
 
         <h2>Core Features</h2>
 
@@ -205,7 +307,7 @@ function EgerConnect() {
 
         </div>
 
-      </section>
+      </section> */}
 
       {/* DEVELOPMENT */}
 
