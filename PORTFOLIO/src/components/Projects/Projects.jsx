@@ -118,14 +118,14 @@ function Projects() {
           </Link> */}
 
           <div className="project-actions">
-                <Link className="ic-view-case eger-case" to="/egerconnect">
+                <Link className="ic-view-case eger-case" to="/IC-Project">
                   View Case
                   <FiArrowUpRight />
                 </Link>
 
                 <a
                   className="live-link"
-                  href="YOUR_EGERCONNECT_LINK"
+                  href="YOUR_IC_PROJECT_LINK"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

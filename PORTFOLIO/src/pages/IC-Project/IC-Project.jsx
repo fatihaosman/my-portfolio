@@ -2,6 +2,42 @@ import "./IC-Project.css";
 
 // import homepageVideo from "../../assets/ic-homepage.mp4";
 // import interactionVideo from "../../assets/ic-interactions.mp4";
+import coverImage from "../../assets/ict-cover.png";
+import heroImage from "../../assets/ict-hero.png";
+import coverageImage from "../../assets/ict-coverage.png";
+import servicesImage from "../../assets/ict-services.png";
+import clientsImage from "../../assets/ict-clients.png";
+
+
+const walkthrough = [
+  {
+    title: "Brand Introduction & Exhibitions",
+    image: heroImage,
+    description:
+      "Introduces the marketing brand, its purpose, and the value it offers to businesses. The hero section highlights exhibitions attended across different regions of Kenya, while a 360-degree visual animation communicates the brand's wide-ranging reach and marketing capabilities."
+  },
+
+  {
+    title: "Our Coverage",
+    image: coverageImage,
+    description:
+      "Uses a map-based visual to communicate the brand's geographical reach, highlighting the countries and regions it serves. This section helps potential clients understand where the brand operates and the markets it can support."
+  },
+
+  {
+    title: "Services We Offer",
+    image: servicesImage,
+    description:
+      "Presents the brand's marketing services in a clear, structured layout, explaining what each service involves and how it can help businesses promote their products, connect with audiences, and expand their market reach."
+  },
+
+  {
+    title: "Brands & Marketing Experience",
+    image: clientsImage,
+    description:
+      "Showcases brands the company has worked with and examples of successful marketing engagements. This section builds credibility by demonstrating the brand's experience, professional relationships, and contribution to client marketing activities."
+  }
+];
 
 function ICProject() {
   return (
@@ -31,6 +67,12 @@ function ICProject() {
         </div>
 
       </section>
+
+      <img
+                src={coverImage}
+                alt="ICT Project Cover Image"
+                className="case-cover"
+      />
 
       {/* VIDEO 1 */}
 
@@ -176,6 +218,49 @@ function ICProject() {
         </div>
 
       </section>
+
+
+      
+{/* WEBSITE WALKTHROUGH */}
+
+<section className="case-section">
+
+  <h2>Website Walkthrough</h2>
+
+  <p className="ict-walkthrough-intro">
+    Explore the key sections of the website, from the brand's
+    introduction and geographical coverage to its marketing
+    services and experience working with different brands.
+  </p>
+
+  <div className="ict-walkthrough-slider">
+
+    {walkthrough.map((screen, index) => (
+      <div
+        className="ict-walkthrough-card"
+        key={index}
+      >
+
+        <img
+          src={screen.image}
+          alt={screen.title}
+        />
+
+        <div className="ict-walkthrough-content">
+
+          <h3>{screen.title}</h3>
+
+          <p>{screen.description}</p>
+
+        </div>
+
+      </div>
+    ))}
+
+  </div>
+
+</section>
+
 
       {/* KEY INTERACTIONS */}
 

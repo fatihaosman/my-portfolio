@@ -235,9 +235,9 @@ function EgerConnect() {
 
       </section>
 
-           {/* EXPERIENCE WALKTHROUGH */}
+        {/* EXPERIENCE WALKTHROUGH */}
 
-        <section className="case-section">
+      <section className="case-section">
 
             <h2>Website Walkthrough</h2>
 

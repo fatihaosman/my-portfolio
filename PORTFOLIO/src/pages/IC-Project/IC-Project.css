@@ -9,7 +9,7 @@
 }
 
 .case-tag{
-    color:#384d21;
+    color:#122E7B;
     font-weight:600;
     letter-spacing:3px;
     margin-bottom:20px;
@@ -43,7 +43,7 @@ video{
 .case-section h2{
     font-size:2.5rem;
     margin-bottom:20px;
-    color:#214D2E;
+    color:#122E7B;
 }
 
 .case-section p{
@@ -103,6 +103,75 @@ video{
     line-height:1.8;
     color:#555;
 }
+
+
+/* ICT WEBSITE WALKTHROUGH */
+
+.ict-walkthrough-intro {
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+.ict-walkthrough-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 5px 10px;
+    scrollbar-width: none;
+}
+
+.ict-walkthrough-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.ict-walkthrough-card {
+    flex: 0 0 320px;
+    scroll-snap-align: start;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Screenshots */
+
+.ict-walkthrough-card img {
+    display: block;
+    width: 100%;
+    height: 480px;
+    object-fit: contain;
+    object-position: center;
+    background: #f8f8f8;
+    padding: 12px;
+}
+
+.ict-walkthrough-content {
+    padding: 12px;
+}
+
+.ict-walkthrough-content h3 {
+    margin-bottom: 12px;
+    color: #122E7B;
+}
+
+.ict-walkthrough-content p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+    .ict-walkthrough-card {
+        flex: 0 0 85%;
+    }
+
+    .ict-walkthrough-card img {
+        height: 360px;
+    }
+}
+
 
 /* Tablet */
 
