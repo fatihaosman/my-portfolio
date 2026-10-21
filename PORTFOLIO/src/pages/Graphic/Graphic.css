@@ -1,0 +1,247 @@
+
+.graphic-page {
+  --graphic-accent: #122e7b;
+  --graphic-text: #202124;
+  --graphic-muted: #6b7280;
+  --graphic-border: #e8e8e8;
+
+  width: 100%;
+  color: var(--graphic-text);
+  background: #f8f9fc;
+  overflow: hidden;
+}
+
+.graphic-page * {
+  box-sizing: border-box;
+}
+
+.graphic-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 24px 90px;
+}
+
+.graphic-eyebrow {
+  margin: 0 0 18px;
+  color: var(--graphic-accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+.graphic-hero h1 {
+  max-width: 850px;
+  margin: 0;
+  font-size: clamp(38px, 6vw, 68px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -2.5px;
+}
+
+.graphic-hero h1 span {
+  display: block;
+  color: var(--graphic-accent);
+}
+
+.graphic-intro {
+  max-width: 680px;
+  margin: 26px 0;
+  color: var(--graphic-muted);
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.graphic-hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--graphic-accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--graphic-accent);
+  padding-bottom: 7px;
+}
+
+.graphic-work-section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 55px 24px 75px;
+}
+
+.graphic-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.graphic-section-heading h2 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.graphic-section-description {
+  max-width: 400px;
+  margin: 0;
+  color: var(--graphic-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.graphic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px 22px;
+}
+
+.graphic-card {
+  min-width: 0;
+}
+
+.graphic-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f4f4f4;
+}
+
+.graphic-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.graphic-card:hover .graphic-card-image img {
+  transform: scale(1.035);
+}
+
+.graphic-card-info {
+  padding: 15px 2px 0;
+}
+
+.graphic-card-info h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.graphic-card-info p {
+  margin: 0;
+  color: var(--graphic-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.other-work {
+  border-top: 1px solid var(--graphic-border);
+}
+
+.graphic-contact {
+  margin-top: 30px;
+  padding: 75px 24px;
+  background: #f6f7fa;
+  text-align: center;
+}
+
+.graphic-contact h2 {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+.graphic-contact > p:not(.graphic-eyebrow) {
+  max-width: 570px;
+  margin: 18px auto 25px;
+  color: var(--graphic-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.graphic-contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 22px;
+  border-radius: 5px;
+  background: var(--graphic-accent);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.graphic-contact a:hover {
+  background: #1c419e;
+}
+
+@media (min-width: 1200px) {
+  .graphic-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .graphic-hero {
+    padding: 70px 22px 55px;
+  }
+
+  .graphic-hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .graphic-intro {
+    font-size: 15px;
+  }
+
+  .graphic-work-section {
+    padding: 40px 20px 55px;
+  }
+
+  .graphic-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .graphic-section-description {
+    max-width: 100%;
+  }
+
+  .graphic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 14px;
+  }
+
+  .graphic-card-image {
+    border-radius: 7px;
+  }
+
+  .graphic-card-info h3 {
+    font-size: 14px;
+  }
+
+  .graphic-card-info p {
+    font-size: 12px;
+  }
+
+  .graphic-contact {
+    padding: 60px 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .graphic-grid {
+    grid-template-columns: 1fr;
+  }
+}

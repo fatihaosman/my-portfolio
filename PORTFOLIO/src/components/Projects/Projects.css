@@ -261,4 +261,27 @@ eger-Project Styles */
 }
 .vendas-view-case:hover{
     color:#214d2e75;
+} 
+
+
+.graphic-header {
+  color: #122e7b;
+}
+
+.graphic-tools span {
+  /* Match your existing .tools span styling */
+}
+
+.graphic-view-case {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #122e7b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.graphic-view-case:hover {
+  opacity: 0.7;
 }

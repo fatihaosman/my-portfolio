@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import { FiArrowUpRight } from "react-icons/fi";
 
 
+
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/ipad Pro3.png";
 import project3 from "../../assets/project31.png";
+import graphicProject from "../../assets/graphic-project.png";
+
 
 function Projects() {
   return (
@@ -57,9 +60,9 @@ function Projects() {
               <FiArrowUpRight />
             </a>
           </div>
-        </div>
+          </div>
 
-        <div className="project-card eger-card">
+          <div className="project-card eger-card">
           <img src={project2} alt="EgerConnect" />
 
           <h3 className="eger-header">EgerConnect</h3>
@@ -95,9 +98,9 @@ function Projects() {
                   <FiArrowUpRight />
                 </a>
               </div>
-        </div>
+          </div>
 
-        <div className="project-card ic-card">
+          <div className="project-card ic-card">
           <img src={project3} alt="IC-Project" />
 
           <h3 className="ic-header">IC-Project</h3>
@@ -133,9 +136,37 @@ function Projects() {
                   <FiArrowUpRight />
                 </a>
               </div>
+         </div>
+
+          
+        <div className="project-card graphic-card">
+            <img
+            src={graphicProject}
+            alt="Graphic design portfolio featuring poster and promotional designs"
+            className="project-image"
+            />
+
+            <h3 className="graphic-header">Graphic Design</h3>
+
+            <p className="project-description">
+            Creative posters and visual content designed for brands,
+            campaigns, and digital platforms.
+            </p>
+
+            <div className="tools graphic-tools">
+            <span>Poster Design</span>
+            <span>Branding</span>
+            <span>Marketing</span>
+            </div>
+
+            <div className="project-actions">
+            <Link className="graphic-view-case" to="/Graphic">
+            View Designs
+            <FiArrowUpRight />
+            </Link>
+            </div>
         </div>
 
-        
 
       </div>
 

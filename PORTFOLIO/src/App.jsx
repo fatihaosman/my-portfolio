@@ -24,6 +24,7 @@ import Home from "./pages/Home";
 import EgerConnect from "./pages/Egerconnect/Egerconnect";
 import UniMart from "./pages/Unimart/Unimart";
 import ICProject from "./pages/IC-Project/IC-Project";
+import Graphic from "./pages/Graphic/graphic";
 import AboutMe from "./pages/AboutME/AboutMe";
 
 function App() {
@@ -52,6 +53,11 @@ function App() {
         <Route
           path="/about-me"
           element={<AboutMe />}
+        />
+
+        <Route
+          path="/graphic"
+          element={<Graphic />}
         />
 
       
